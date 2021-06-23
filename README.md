@@ -80,6 +80,37 @@ Copy `example.env` to `.env` and fill it with your credentials.
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
 - `/admincache` - Refresh admin list
+## For Channel
+- /cplay <song name> - play lagu yang direquest
+- /cdplay <song name> - play lagu yang direquest via deezer
+- /csplay <song name> - play lagu yang direquest via jio saavn
+- /cplaylist - Menampilkan lagu yang akan diputar
+- /ccurrent - Menampilkan yang sedang diputar
+- /csong <song name> - download lagu
+- /csearch <query> - mencari lagu melalui youtube
+- /cdeezer <song name> - download lagu via deezer
+- /csaavn <song name> - download lagu via saavn
+- /cvideo <song name> - download video
+
+Admins only
+- /cplayer - membuka pengaturan musik
+- /cpause - menjeda pemutaran
+- /cresume - memainkan ulang
+- /cskip - skip lagu berikutnya
+- /cend - stop pemutaran
+- /userbotjoin - mengundang asisten bot musik
+- /userbotleave - mengeluarkan asisten musik bot
+- /admincache - Refresh admin"""
+
+### Commands for Sudo Users 
+- /userbotleaveall - remove assistant from all chats
+- /gcast <reply to message> - globally brodcast replied message to all chats
+- /pmpermit [on/off] - enable/disable pmpermit message
+
+#### Pmpermit
+- .a - approove someone to pm you
+- .da - disapproove someone to pm you
++ Sudo Users can execute any command in any groups
 
 ## Support
 - [Channel](https://t.me/ossuport3)

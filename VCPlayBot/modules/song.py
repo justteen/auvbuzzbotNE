@@ -53,7 +53,7 @@ def song(client, message):
         m.edit("❌ tidak dapat menemukan\n\nCoba menggunakan kata lain.")
         print(str(e))
         return
-    m.edit("Downloading the song ")
+    m.edit("Mendownload lagu")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)

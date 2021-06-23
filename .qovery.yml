@@ -1,11 +1,11 @@
 ---
 application:
-  name: "vcplaybot"
-  project: "VCPlayBot"
-  organization: "QoveryCommunity"
+  name: "buzzplaybot"
+  project: "BUZZplayBot"
+  organization: "AutoBuzz"
 routers:
-- name: "main-vcplaybot"
+- name: "main-buzzplaybot"
   routes:
-  - application_name: "vcplaybot"
+  - application_name: "buzzplaybot"
     paths:
     - "/*"

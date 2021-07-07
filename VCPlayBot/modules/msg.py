@@ -1,17 +1,17 @@
 import os
 from VCPlayBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = """
+      START_MSG = 
+"""
 ❁══════════════════════❁
 HELLO ! [{}](tg://user?id={})!!**
-
       🎼 𝐁𝐔𝐙𝐙 𝐌𝐔𝐒𝐈𝐂 🎼
 Bot untuk memutar musik dalam obrolan suara group chat anda.
-
 🎧 Jangan lupa untuk menambahkan asisten musik juga, agar dapat memutar musiknya. 🎧
+OWNER     : [𝐑𝐈𝐃𝐖𝐀𝐍](https://t.me/psycho_syridwan)
+MODERATOR : [𝐉𝐄𝐒𝐘](https://t.me/OJssyy)
 
 /help untuk mengetahui perintah
-
 ❁══════════════════════❁
 """
       HELP_MSG = [

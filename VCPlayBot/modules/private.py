@@ -15,8 +15,8 @@ def _start(client, message):
                 [
                     InlineKeyboardButton(
                         "Support 🧟", url="https://t.me/Kabaridevbot_bot"
-                    )
-                                        InlineKeyboardButton(
+                    ),
+                    InlineKeyboardButton(
                         "Group 🧟", url="https://t.me/ossuport"
                     )
                 ],

@@ -16,7 +16,7 @@ def _start(client, message):
                     InlineKeyboardButton(
                         "Support 🧟", url="https://t.me/Kabaridevbot_bot"
                     ),
-                                        InlineKeyboardButton(
+                    InlineKeyboardButton(
                         "Group 🧟", url="https://t.me/ossuport"
                     )
                 ],
@@ -47,7 +47,7 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} sedang online!**""",
+        f"""**🔴 {PROJECT_NAME} sedang online**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

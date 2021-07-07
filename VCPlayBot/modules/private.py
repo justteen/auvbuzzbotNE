@@ -111,7 +111,7 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍♀️ Hello Guyss! Saya bisa memutar musik & download video maupun musik di telegram groups & channels.**""",
+        f"""**🙋‍♀️ Hello Guyss! Saya bisa memutar musik & download video maupun musik di telegram groups & channels!.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

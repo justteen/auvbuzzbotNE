@@ -8,8 +8,9 @@ logging.basicConfig(level=logging.INFO)
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,
-        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),disable_web_page_preview=True),
-        parse_mode="markdown",
+        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+        disable_web_page_preview=True,
+        parse_mode="markdown")
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -111,7 +112,7 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍♀️ Hello Guyss! Saya bisa memutar musik & download video maupun musik di telegram groups & channels!.**""",
+        f"""**🙋‍♀️ Hello Guyss! Saya bisa memutar musik & download video maupun musik di telegram groups & channels.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

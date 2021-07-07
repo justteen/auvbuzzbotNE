@@ -1,7 +1,7 @@
 import os
 from VCPlayBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = f"""
+      START_MSG = """
 ❁══════════════════════❁
 HELLO ! [{}](tg://user?id={})!!**
 

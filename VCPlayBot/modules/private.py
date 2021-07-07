@@ -9,8 +9,9 @@ logging.basicConfig(level=logging.INFO)
 def _start(client, message):
     client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+        parse_mode="markdown",
         disable_web_page_preview=True,
-        parse_mode="markdown")
+        disable_notification=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [

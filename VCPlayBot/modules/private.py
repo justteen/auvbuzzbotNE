@@ -6,8 +6,9 @@ from VCPlayBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GRO
 logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
-def _start(client, message):
-    client.send_photo("https://telegra.ph/file/c5ac64ba0d35133e4411c.jpg")
+def _start(client, message, foto):
+    foto.send_photo(message.chat.id,
+    photo="https://telegra.ph/file/c5ac64ba0d35133e4411c.jpg", message.from_user.id)
     client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",

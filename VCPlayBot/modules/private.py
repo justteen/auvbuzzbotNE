@@ -7,8 +7,8 @@ logging.basicConfig(level=logging.INFO)
 @bot.message_handler(commands=['start'])
 def text(message):
     chatid = message.chat.id
-    photo = 'https://telegra.ph/file/c5ac64ba0d35133e4411c.jpg'
-    bot.send_photo(chat_id,photo)
+    logo = 'https://telegra.ph/file/c5ac64ba0d35133e4411c.jpg'
+    bot.send_photo(chat_id, logo)
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,

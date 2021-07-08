@@ -4,11 +4,6 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from VCPlayBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL,BOT_USERNAME
 logging.basicConfig(level=logging.INFO)
-@bot.message_handler(commands=['start'])
-def text(message):
-    chatid = message.chat.id
-    logo = 'https://telegra.ph/file/c5ac64ba0d35133e4411c.jpg'
-    bot.send_photo(chat_id, logo)
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,

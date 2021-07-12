@@ -35,7 +35,7 @@ from VCPlayBot.helpers.decorators import authorized_users_only
 from VCPlayBot.helpers.filters import command, other_filters
 from VCPlayBot.helpers.gets import get_file_name
 from VCPlayBot.services.callsmusic import callsmusic
-from vcplaybot.services.queues import queues
+from VCPlaybot.services.queues import queues
 from VCPlayBot.services.callsmusic.callsmusic import client as USER
 from VCPlayBot.services.converter.converter import convert
 from VCPlayBot.services.downloaders import youtube

@@ -4,7 +4,6 @@ from pyrogram import Client
 from pytgcalls import PyTgCalls
 
 from VCPlayBot.config import API_HASH, API_ID, SESSION_NAME
-from VCPlayBot.services.callsmusic import queues
 from VCPlayBot.services.callsmusic import client
 from VCPlayBot.services.queues import queues
 

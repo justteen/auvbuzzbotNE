@@ -1,7 +1,5 @@
 from typing import Dict
 from pytgcalls import GroupCall
-from pyrogram import Client
-from pytgcalls import PyTgCalls
 
 from VCPlayBot.services.callsmusic import client
 from VCPlayBot.services.queues import queues

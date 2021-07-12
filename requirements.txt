@@ -16,5 +16,4 @@ python-arq
 future
 psutil
 wget
-tswift
 regex
